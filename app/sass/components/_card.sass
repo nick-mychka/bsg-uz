@@ -1,0 +1,41 @@
+.card
+	&-header
+		position: relative
+		padding: 30px
+		font-size: 20px
+		font-weight: 600
+		line-height: 1
+		background-color: #fff
+		cursor: pointer
+		transition: transform .5s ease-out
+
+		&__title
+			display: inline-block
+			width: calc(100% - 56px)
+
+		&__arrow
+			position: absolute
+			top: 50%
+			right: 35px
+			transform: translateY(-50%)
+			width: 36px
+			height: 29px
+			padding: 10px
+			background-color: #fff
+			border-radius: 10rem
+
+			&-img
+				display: block
+				width: 100%
+				height: auto
+				transform: rotate(180deg)
+
+		&.collapsed
+			transition: transform .5s ease-out
+
+			.card-header__arrow-img
+				transform: rotate(00deg)
+
+	&-body
+		padding: 1.25rem 30px
+		text-align: justify

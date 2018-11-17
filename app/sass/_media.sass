@@ -1,0 +1,252 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≤1200px
++media-breakpoint-down(lg)
+
+	// First section Events
+	.event-composition
+		padding-left: 0
+
+	.event-img-container
+		&--questions
+			margin-top: 75px
+
+
+	// Meeting Section
+	.meeting-text
+		padding: 5px 0
+
+	.meeting-map__container
+		padding-top: 10px
+
+
+	// Logos carousel section
+	.logo-carousel__container
+		width: calc(((100vw - 910px)/ 2) + 910px)
+
+// ≤992px
++media-breakpoint-down(md)
+
+	.mt--big
+		margin-top: 25px
+	
+	.square-btn
+		width: 300px
+		height: 100px
+		font-size: 24px
+		line-height: 100px
+
+	.hero-section
+		&__text-title
+			font-size: 60px
+
+		&__contact-line
+			padding: 12px 20px
+			&-contact-container
+				flex-direction: column
+				justify-content: flex-start
+				align-items: flex-start
+			&-contact-item
+				margin-bottom: 4px
+
+	// First section Events
+	.s-events
+		padding: 45px 0 40px
+
+	.event-img-container
+		&--questions
+			margin-top: 15px
+
+
+	// Gain gift secton
+	.gift-container__img
+		width: 222px
+		height: 147px
+
+
+	// Meeting Section
+	.s-meeting
+		padding: 40px 0
+
+	.meeting-map__container
+		margin-bottom: 30px
+
+
+	//	Who organizer Section
+	.organizer__logo
+		width: 210px
+		height: 210px
+
+
+	// Logos carousel section
+	.logo-carousel__container
+		width: calc(((100vw - 670px)/ 2) + 670px)
+
+	.carousel-cell 
+		margin-right: 40px
+
+
+	// FAQ section
+	.s-faq
+		padding: 30px 0
+
+	.faq-accordion
+		padding-top: 20px
+
+	// Footer section
+	footer
+		padding: 30px 0 15px
+
+	.footer-contact
+		max-width: 280px
+		margin: 0 auto
+		padding-bottom: 20px
+
+	.footer-btn-container
+		padding-bottom: 30px
+		text-align: center
+
+// ≤768px
++media-breakpoint-down(sm)
+
+	.hero-section
+		&__text-title
+			font-size: 48px
+
+	// First section Events
+	.events-wrap
+		padding: 20px 0
+
+	.events-row
+		padding-top: 25px
+
+	.event-img-container
+		&--reading
+			margin-bottom: 50px
+
+
+	// Gain gift secton
+	.s-gift
+		padding: 40px 0 25px
+
+	.gift-container
+		padding-bottom: 0
+		&__text
+			padding-bottom: 15px
+
+
+	// Meeting Section
+	.meeting-text
+		text-align: justify
+
+	//	Who organizer Section
+	.organizer__logo
+		width: 250px
+		height: 250px
+		margin-bottom: 25px
+
+	.organizer-text
+		text-align: justify
+
+
+	// Logos carousel section
+	.logo-carousel__container
+		width: calc(((100vw - 490px)/ 2) + 490px)
+
+// ≤576px
++media-breakpoint-down(xs)
+
+	.h2
+		font-size: 36px
+
+	.square-btn
+		width: 280px
+		height: 90px
+		font-size: 20px
+		line-height: 90px
+
+	.card
+		&-header
+			padding: 20px 15px
+			font-size: 16px
+			&__arrow
+				right: 20px
+			&__title
+				width: calc(100% - 40px)
+
+		&-body
+			padding: 1.25rem 15px
+
+	.canvas
+		border-radius: 10rem
+		
+	.hero-section 
+		&__text
+			text-align: center
+
+			&-title
+				margin-top: 25px
+				font-size: 40px
+
+			&-description
+				margin-top: 25px
+				line-height: 1.25
+
+		&__contact-line
+			&-contact-container
+				max-width: 224px
+				margin: 0 auto
+				padding-bottom: 15px
+
+	// First section Events
+	.events-row
+		padding-top: 20px
+
+	.event-img-container
+		&--reading
+			margin-bottom: 20px
+
+	.event-container
+		text-align: center
+
+		.event-description
+			margin: 0 auto
+
+
+	// Gain gift secton
+	.gift-container
+		padding-bottom: 0
+
+		&__text
+			text-align: center
+
+		&__text-gift
+    	font-size: 18px
+
+	//	Who organizer Section
+	.organizer__logo
+		width: 210px
+		height: 210px
+
+
+	// Logos carousel section
+	.logo-carousel__container
+		width: calc(100vw - 15px)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

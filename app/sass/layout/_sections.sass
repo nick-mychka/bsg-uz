@@ -1,0 +1,211 @@
+// First section Events
+.s-events
+	padding: 95px 0 80px
+
+.events-wrap
+	padding: 60px 0 20px
+
+.events-row
+	padding-top: 100px
+
+.event-composition
+	padding-left: 50px
+
+.event-img-container
+	height: auto
+	&--fellowship
+		max-width: 577px
+	&--questions 
+		max-width: 364px
+		margin-top: 130px
+	&--reading
+		max-width: 590px
+		margin-bottom: 190px
+	img 
+		display: block
+		width: 100%
+		height: auto
+
+.event-container
+	.event-icon
+		img 
+			display: inline-block
+			width: 44px
+			height: auto
+			padding: 15px 0
+
+	.event-description
+		max-width: 430px
+		padding: 15px 0
+		color: #262626
+
+
+// Gain gift secton
+.s-gift
+	padding-top: 65px
+	background-color: #fff
+	background-image: url(../../img/bg-cover/gift-bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+
+.gift-container
+	padding-bottom: 65px
+
+	&__img
+		width: 444px
+		height: 294px
+		margin: 0 auto
+
+		img 
+			display: block
+			width: 100%
+			height: auto
+
+	&__text
+		padding-bottom: 50px
+		p 
+			margin-bottom: 0
+
+		&-gift 
+			font-size: 26px
+
+
+// Meeting Section
+.s-meeting
+	padding: 90px 0 70px
+
+.meeting-text
+	margin: 0
+	padding: 10px 0
+	line-height: 1.5
+
+.meeting-map__container
+	padding-top: 20px
+	img 
+		display: block
+		width: 100%
+		height: auto
+
+.meeting-carousel__container
+	.carousel-cell
+		width: 100%
+		height: auto
+		margin: 0
+		&__container
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(0, 0, 0, 0.45)
+		
+		&__container-img
+			display: block
+			width: 100%
+			height: auto
+
+	.flickity-page-dots
+		bottom: 15px
+		.dot
+			width: 6px
+			height: 6px
+			background: transparent 
+			border: solid 1px #fff
+
+			&.is-selected
+				background: #fff
+
+	.flickity-button
+		background: transparent
+
+	.flickity-prev-next-button .flickity-button-icon 
+		width: 9px
+		height: 16px
+		fill: #fff
+
+
+//	Who organizer Section
+.s-organizer
+	padding: 20px 0 70px
+
+.organizer__logo
+	width: 250px
+	height: 250px
+	margin: 0 auto
+
+	&-img
+		display: block
+		width: 100%
+		height: auto
+
+.organizer-text
+	margin-bottom: 10px
+	line-height: 1.5
+
+
+// Logos carousel section
+.s-logo-carousel
+	padding: 30px 0
+	background-color: #f7f7f7
+	overflow-y: hidden
+
+.logo-carousel
+	&__wrap
+		position: relative
+		padding-top: 30px
+		height: 236px
+
+	&__container
+		position: absolute
+		left: 0
+		top: 30px
+		width: calc(((100vw - 1090px) / 2) + 1090px)
+		height: 206px
+
+.carousel-cell 
+	width: 155px
+	margin-right: 100px
+
+	&__img-container
+		position: relative
+		width: 155px
+		height: 155px
+
+		&-img
+			position: absolute
+			left: 0
+			top: 0
+			display: block 
+			width: 100%
+			height: auto
+			transition: all 0.3s ease
+
+		.img_bw
+			z-index: 2
+		.img_color
+			z-index: -1
+			opacity: 0
+
+	&.is-selected
+		.carousel-cell__img-container
+			.img_color
+				z-index: 2
+				opacity: 1
+			.img_bw
+				z-index: -1
+				opacity: 0
+
+	&__text
+		margin: 0
+		padding-top: 25px
+		text-align: center
+
+
+// Last Section FAQ
+.s-faq
+	position: relative
+	padding: 100px 0 40px
