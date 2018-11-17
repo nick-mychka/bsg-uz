@@ -6,6 +6,20 @@
 // ≤1200px
 +media-breakpoint-down(lg)
 
+	// iframe
+	.meeting-map__container
+		iframe
+			height: 210px
+
+
+	// Header section
+	.hero-section
+		&__text-title
+			font-size: 70px
+		&__contact-line-contact-item-img
+			margin-right: 7px
+
+
 	// First section Events
 	.event-composition
 		padding-left: 0
@@ -30,8 +44,16 @@
 // ≤992px
 +media-breakpoint-down(md)
 
+	// iframe
+	.meeting-map__container
+		iframe
+			height: 400px
+
 	.mt--big
 		margin-top: 25px
+
+	.h2
+		font-size: 52px
 	
 	.square-btn
 		width: 300px
@@ -41,8 +63,7 @@
 
 	.hero-section
 		&__text-title
-			font-size: 60px
-
+			font-size: 56px
 		&__contact-line
 			padding: 12px 20px
 			&-contact-container
@@ -65,6 +86,8 @@
 	.gift-container__img
 		width: 222px
 		height: 147px
+	.gift-container__text-gift
+		font-size: 22px
 
 
 	// Meeting Section
@@ -101,7 +124,7 @@
 		padding: 30px 0 15px
 
 	.footer-contact
-		max-width: 280px
+		max-width: 300px
 		margin: 0 auto
 		padding-bottom: 20px
 
@@ -114,14 +137,14 @@
 
 	.hero-section
 		&__text-title
-			font-size: 48px
+			font-size: 40px
 
 	// First section Events
 	.events-wrap
 		padding: 20px 0
 
 	.events-row
-		padding-top: 25px
+		padding-top: 0
 
 	.event-img-container
 		&--reading
@@ -160,7 +183,10 @@
 +media-breakpoint-down(xs)
 
 	.h2
-		font-size: 36px
+		font-size: 30px
+
+	.h4
+		font-size: 20px
 
 	.square-btn
 		width: 280px
@@ -182,29 +208,39 @@
 
 	.canvas
 		border-radius: 10rem
-		
-	.hero-section 
+
+	.main-btn__wrap
+		text-align: center
+
+	// iframe
+	.meeting-map__container
+		iframe
+			height: 300px
+
+	.hero-section
+		background-position: left center
+		&__text
+			transform: translateY(-60%)
+
 		&__text
 			text-align: center
 
 			&-title
 				margin-top: 25px
-				font-size: 40px
+				font-size: 34px
 
 			&-description
 				margin-top: 25px
 				line-height: 1.25
 
 		&__contact-line
+			padding: 0 0 25px
 			&-contact-container
-				max-width: 224px
+				max-width: 240px
 				margin: 0 auto
-				padding-bottom: 15px
+				padding-bottom: 25px
 
 	// First section Events
-	.events-row
-		padding-top: 20px
-
 	.event-img-container
 		&--reading
 			margin-bottom: 20px
@@ -235,6 +271,9 @@
 	// Logos carousel section
 	.logo-carousel__container
 		width: calc(100vw - 15px)
+
+	.footer-contact__container-phone
+		margin-right: 10px
 
 
 /*==========  Mobile First  ==========*/
