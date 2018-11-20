@@ -1,15 +1,16 @@
 .burger-menu
 	position: relative
-	margin-top: -50px
 	text-align: right
 
 .hamburger
 	padding: 0
+	transition: all 0.35s ease
 	&.is-active
 		right: 20px
 		position: fixed
 		z-index: 10000
 		top: 20px
+		animation: moveInRight 500ms ease-out forwards
 
 .hamburger-box
 	width: 24px
@@ -91,3 +92,18 @@
 	&.menu-active
 		opacity: 1
 		visibility: visible
+
+
+@keyframes moveInRight 
+	0% 
+		opacity: 0
+		transform: scale(0)
+	
+	25% 
+		opacity: 0
+		transform: scale(0)
+
+	100% 
+		opacity: 1
+		transform: scale(1)
+	

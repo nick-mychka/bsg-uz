@@ -14,6 +14,8 @@
 
 	// Header section
 	.hero-section
+		&__top-line-menu-link
+			padding: 6px 15px
 		&__text-title
 			font-size: 70px
 		&__contact-line-contact-item-img
@@ -38,8 +40,8 @@
 
 
 	// Logos carousel section
-	.logo-carousel__container
-		width: calc(((100vw - 910px)/ 2) + 910px)
+	// .logo-carousel__container
+	// 	width: calc(((100vw - 910px)/ 2) + 910px)
 
 // ≤992px
 +media-breakpoint-down(md)
@@ -72,6 +74,22 @@
 				align-items: flex-start
 			&-contact-item
 				margin-bottom: 4px
+				span
+					position: relative
+					display: inline-block
+					padding-right: 20px
+					margin-right: 15px
+					&:after
+						content: ""
+						position: absolute 
+						top: 50%
+						right: 0
+						transform: translateY(-50%)
+						width: 2px
+						height: 70%
+						background-color: #fff
+				&-img 
+					margin-right: 0
 
 	// First section Events
 	.s-events
@@ -105,8 +123,8 @@
 
 
 	// Logos carousel section
-	.logo-carousel__container
-		width: calc(((100vw - 670px)/ 2) + 670px)
+	// .logo-carousel__container
+	// 	width: calc(((100vw - 670px)/ 2) + 670px)
 
 	.carousel-cell 
 		margin-right: 40px
@@ -124,7 +142,7 @@
 		padding: 30px 0 15px
 
 	.footer-contact
-		max-width: 300px
+		max-width: 280px
 		margin: 0 auto
 		padding-bottom: 20px
 
@@ -143,7 +161,8 @@
 	.events-wrap
 		padding: 20px 0
 
-	.events-row
+	.events-row,
+	.events-bottom-row
 		padding-top: 0
 
 	.event-img-container
@@ -161,23 +180,16 @@
 			padding-bottom: 15px
 
 
-	// Meeting Section
-	.meeting-text
-		text-align: justify
-
 	//	Who organizer Section
 	.organizer__logo
 		width: 250px
 		height: 250px
 		margin-bottom: 25px
 
-	.organizer-text
-		text-align: justify
-
 
 	// Logos carousel section
-	.logo-carousel__container
-		width: calc(((100vw - 490px)/ 2) + 490px)
+	// .logo-carousel__container
+	// 	width: calc(((100vw - 490px)/ 2) + 490px)
 
 // ≤576px
 +media-breakpoint-down(xs)
@@ -194,6 +206,10 @@
 		font-size: 20px
 		line-height: 90px
 
+	.canvas
+		padding: 6px 10px
+		letter-spacing: -0.3px
+
 	.card
 		&-header
 			padding: 20px 15px
@@ -206,9 +222,6 @@
 		&-body
 			padding: 1.25rem 15px
 
-	.canvas
-		border-radius: 10rem
-
 	.main-btn__wrap
 		text-align: center
 
@@ -218,12 +231,17 @@
 			height: 300px
 
 	.hero-section
-		background-position: left center
-		&__text
-			transform: translateY(-60%)
+		background-position: -200px center
+		&__top-line
+			padding: 20px 15px 
 
 		&__text
-			text-align: center
+			transform: translateY(-60%)
+			padding:
+				left: 15px
+				right: 15px 
+
+		&__text
 
 			&-title
 				margin-top: 25px
@@ -234,10 +252,8 @@
 				line-height: 1.25
 
 		&__contact-line
-			padding: 0 0 25px
+			padding: 0 0 40px 15px
 			&-contact-container
-				max-width: 240px
-				margin: 0 auto
 				padding-bottom: 25px
 
 	// First section Events
@@ -245,14 +261,11 @@
 		&--reading
 			margin-bottom: 20px
 
-	.event-container
-		text-align: center
-
-		.event-description
-			margin: 0 auto
-
 
 	// Gain gift secton
+	.s-gift
+		background-position: -275px center
+
 	.gift-container
 		padding-bottom: 0
 
@@ -269,11 +282,8 @@
 
 
 	// Logos carousel section
-	.logo-carousel__container
-		width: calc(100vw - 15px)
-
-	.footer-contact__container-phone
-		margin-right: 10px
+	// .logo-carousel__container
+	// 	width: calc(100vw - 15px)
 
 
 /*==========  Mobile First  ==========*/

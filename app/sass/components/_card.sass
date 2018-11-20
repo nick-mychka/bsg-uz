@@ -29,12 +29,13 @@
 				width: 100%
 				height: auto
 				transform: rotate(180deg)
+				transition: transform .25s ease-out
 
 		&.collapsed
-			transition: transform .5s ease-out
+			border-bottom-color: transparent
 
 			.card-header__arrow-img
-				transform: rotate(00deg)
+				transform: rotate(0deg)
 
 	&-body
 		padding: 1.25rem 30px

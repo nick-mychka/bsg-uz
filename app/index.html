@@ -24,6 +24,16 @@
 
 	<link rel="stylesheet" href="css/main.min.css">
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123347137-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-123347137-2');
+	</script>
+
 </head>
 
 <body>
@@ -85,15 +95,21 @@
 					<div class="col-12">
 
 						<div class="hero-section__text-date">
-							<span class="canvas canvas--blue fw-600">22 ноября – 2 декабря</span>
+							<span class="canvas canvas--blue fw-600">21 ноября – 30 ноября</span>
 						</div>
 
 						<h1 class="hero-section__text-title mt--3">Вечера чтения Библии</h1>
 
 						<div class="hero-section__text-description mt--4">
-							<span class="canvas canvas--blue d-none d-sm-inline-block fw-500">Две недели совместного чтения Библии в приятной</span> 
-							<span class="canvas canvas--blue d-none d-sm-inline-block fw-500">компании студентов и за горячим чаем</span>
-							<span class="canvas-inline canvas--blue d-sm-none fw-500">Две недели совместного чтения Библии в приятной компании студентов и за горячим чаем</span>
+							<div class="d-none d-sm-inline-block">
+								<span class="canvas canvas--blue fw-500">Две недели совместного чтения Библии в приятной</span> 
+								<span class="canvas canvas--blue fw-500">компании студентов и за горячим чаем</span>
+							</div>
+							<div class="d-sm-none">
+								<span class="canvas canvas--blue fw-500">Совместное чтение Библии</span> 
+								<span class="canvas canvas--blue fw-500">в приятной компании студентов </span>
+								<span class="canvas canvas--blue fw-500">и за горячим чаем</span>
+							</div>
 						</div>
 
 					</div>
@@ -106,13 +122,15 @@
 					<div class="col-sm-6 col-lg-8">
 						<ul class="hero-section__contact-line-contact-container">
 							<li class="hero-section__contact-line-contact-item"> 
-								<img class="hero-section__contact-line-contact-item-img" src="img/icons/header/clock.svg" alt="Time"> 17:00-20:00
+								<span><img class="hero-section__contact-line-contact-item-img" src="img/icons/header/clock.svg" alt="Time"></span> 17:00-19:00
 							</li>
 							<li class="hero-section__contact-line-contact-item"> 
-								<img class="hero-section__contact-line-contact-item-img" src="img/icons/header/calendar.svg" alt="Time"> Понедельник - Пятница
+									<span><img class="hero-section__contact-line-contact-item-img" src="img/icons/header/calendar.svg" alt="Time"></span> Понедельник - Пятница
 							</li>
-							<li class="hero-section__contact-line-contact-item"> 
-								<img class="hero-section__contact-line-contact-item-img" src="img/icons/header/placeholder.svg" alt="Time"> ул.Заньковецкой, 89А
+							<li class="hero-section__contact-line-contact-item smooth-scroll-on-js">
+								<a href="#meeting" class="link-default"> 
+									<span><img class="hero-section__contact-line-contact-item-img" src="img/icons/header/placeholder.svg" alt="Time"></span> ул.Заньковецкой, 89А
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -186,7 +204,7 @@
 					</div>
 				</div>
 
-				<div class="row events-row">
+				<div class="row events-bottom-row">
 					<div class="col-md-6">
 						<div class="event-container">
 							<div class="event-icon"><img src="img/icons/sections/4happy.svg" alt="happy"></div>
@@ -257,8 +275,8 @@
 
 			<div class="row align-items-center mt--big">
 					<div class="col-lg-6">
-						<h4 class="h4">Кафе "Сендвич", ул. Заньковецкая 89А</h4>
-						<p class="meeting-text">Вечера будут проходить с понедельника по пятницу в 17:00-20:00. Кафе в корпусе факультета информатики Закарпатского государственного университета</p>
+						<h4 class="h4">Кафе "Сендвич", ул. Заньковецкая, 89А</h4>
+						<p class="meeting-text">Вечера будут проходить с понедельника по пятницу в 17:00-19:00. Кафе в корпусе факультета информатики Закарпатского государственного университета</p>
 						<div class="meeting-map__container">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2638.166150889826!2d22.26461866364226!3d48.60666280150086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473918fb0df5f325%3A0x43f618b8466db7cc!2z0YPQuy4g0JfQsNC90YzQutC-0LLQtdGG0LrQvtC5LCA4OSwg0KPQttCz0L7RgNC-0LQsINCX0LDQutCw0YDQv9Cw0YLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgODgwMDA!5e0!3m2!1sru!2sua!4v1542352885499" allowfullscreen></iframe>
 						</div>
@@ -325,70 +343,68 @@
 					<h4 class="h4">Мы активно общаемся с:</h4>
 				</div>
 
-				<div class="col-12">
-
-					<div class="logo-carousel__wrap">
-						<div class="logo-carousel__container">
-							<div class="carousel-cell">
-								<a class="full-container-link" href="https://www.instagram.com/biblestudygroup.info/?hl=ru" target="_blank" rel="nofollow noopener"></a>
-								<div class="carousel-cell__img-container">
-										<img class="carousel-cell__img-container-img img_bw" src="img/carousel/bsg_bw.png" alt="bsg_bw">
-										<img class="carousel-cell__img-container-img img_color" src="img/carousel/bsg_color.png" alt="bsg_color">
-								</div>
-								<p class="carousel-cell__text">г. Киев</p>
-							</div>
-
-							<div class="carousel-cell">
-								<a class="full-container-link" href="https://www.instagram.com/studentslovingbible/?hl=ru" target="_blank" rel="nofollow noopener"></a>
-								<div class="carousel-cell__img-container">
-										<img class="carousel-cell__img-container-img img_bw" src="img/carousel/chernigiv_bw.png" alt="chernigiv_bw">
-										<img class="carousel-cell__img-container-img img_color" src="img/carousel/chernigiv_color.png" alt="chernigiv_color">
-								</div>
-								<p class="carousel-cell__text">г. Чернигов</p>
-							</div>
-
-							<div class="carousel-cell">
-								<a class="full-container-link" href="https://www.instagram.com/msu_bible/?hl=ru" target="_blank" rel="nofollow noopener"></a>
-								<div class="carousel-cell__img-container">
-										<img class="carousel-cell__img-container-img img_bw" src="img/carousel/bs_bw.png" alt="bs_bw">
-										<img class="carousel-cell__img-container-img img_color" src="img/carousel/bs_color.png" alt="bs_color">
-								</div>
-								<p class="carousel-cell__text">г. Москва</p>
-							</div>
-
-							<div class="carousel-cell">
-								<a class="full-container-link" href="https://www.instagram.com/studienbibel/?hl=ru" target="_blank" rel="nofollow noopener"></a>
-								<div class="carousel-cell__img-container">
-										<img class="carousel-cell__img-container-img img_bw" src="img/carousel/stuttgard_bw.png" alt="stuttgard_bw">
-										<img class="carousel-cell__img-container-img img_color" src="img/carousel/stuttgard_color.png" alt="stuttgard_color">
-								</div>
-								<p class="carousel-cell__text">г. Штутгард</p>
-							</div>
-
-							<div class="carousel-cell">
-								<a class="full-container-link" href="https://www.instagram.com/csoc_tx/?hl=ru" target="_blank" rel="nofollow noopener"></a>
-								<div class="carousel-cell__img-container">
-										<img class="carousel-cell__img-container-img img_bw" src="img/carousel/csoc_tx_bw.png" alt="csoc_tx_bw">
-										<img class="carousel-cell__img-container-img img_color" src="img/carousel/csoc_tx_color.png" alt="csoc_tx_color">
-								</div>
-								<p class="carousel-cell__text">г. Остин</p>
-							</div>
-
-							<div class="carousel-cell">
-								<a class="full-container-link" href="https://www.instagram.com/coc_osu/" target="_blank" rel="nofollow noopener"></a>
-								<div class="carousel-cell__img-container">
-										<img class="carousel-cell__img-container-img img_bw" src="img/carousel/ohaio_bw.png" alt="ohaio_bw">
-										<img class="carousel-cell__img-container-img img_color" src="img/carousel/ohaio_color.png" alt="ohaio_color">
-								</div>
-								<p class="carousel-cell__text">г. Колумбус</p>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
 			</div>
 		</div>
+
+		<div class="logo-carousel__wrap">
+			<div class="logo-carousel__container">
+				<div class="carousel-cell">
+					<a class="full-container-link" href="https://www.instagram.com/biblestudygroup.info/?hl=ru" target="_blank" rel="nofollow noopener"></a>
+					<div class="carousel-cell__img-container">
+							<img class="carousel-cell__img-container-img img_bw" src="img/carousel/bsg_bw.png" alt="bsg_bw">
+							<img class="carousel-cell__img-container-img img_color" src="img/carousel/bsg_color.png" alt="bsg_color">
+					</div>
+					<p class="carousel-cell__text">г. Киев</p>
+				</div>
+
+				<div class="carousel-cell">
+					<a class="full-container-link" href="https://www.instagram.com/studentslovingbible/?hl=ru" target="_blank" rel="nofollow noopener"></a>
+					<div class="carousel-cell__img-container">
+							<img class="carousel-cell__img-container-img img_bw" src="img/carousel/chernigiv_bw.png" alt="chernigiv_bw">
+							<img class="carousel-cell__img-container-img img_color" src="img/carousel/chernigiv_color.png" alt="chernigiv_color">
+					</div>
+					<p class="carousel-cell__text">г. Чернигов</p>
+				</div>
+
+				<div class="carousel-cell">
+					<a class="full-container-link" href="https://www.instagram.com/msu_bible/?hl=ru" target="_blank" rel="nofollow noopener"></a>
+					<div class="carousel-cell__img-container">
+							<img class="carousel-cell__img-container-img img_bw" src="img/carousel/bs_bw.png" alt="bs_bw">
+							<img class="carousel-cell__img-container-img img_color" src="img/carousel/bs_color.png" alt="bs_color">
+					</div>
+					<p class="carousel-cell__text">г. Москва</p>
+				</div>
+
+				<div class="carousel-cell">
+					<a class="full-container-link" href="https://www.instagram.com/studienbibel/?hl=ru" target="_blank" rel="nofollow noopener"></a>
+					<div class="carousel-cell__img-container">
+							<img class="carousel-cell__img-container-img img_bw" src="img/carousel/stuttgard_bw.png" alt="stuttgard_bw">
+							<img class="carousel-cell__img-container-img img_color" src="img/carousel/stuttgard_color.png" alt="stuttgard_color">
+					</div>
+					<p class="carousel-cell__text">г. Штутгард</p>
+				</div>
+
+				<div class="carousel-cell">
+					<a class="full-container-link" href="https://www.instagram.com/csoc_tx/?hl=ru" target="_blank" rel="nofollow noopener"></a>
+					<div class="carousel-cell__img-container">
+							<img class="carousel-cell__img-container-img img_bw" src="img/carousel/csoc_tx_bw.png" alt="csoc_tx_bw">
+							<img class="carousel-cell__img-container-img img_color" src="img/carousel/csoc_tx_color.png" alt="csoc_tx_color">
+					</div>
+					<p class="carousel-cell__text">г. Остин</p>
+				</div>
+
+				<div class="carousel-cell">
+					<a class="full-container-link" href="https://www.instagram.com/coc_osu/" target="_blank" rel="nofollow noopener"></a>
+					<div class="carousel-cell__img-container">
+							<img class="carousel-cell__img-container-img img_bw" src="img/carousel/ohaio_bw.png" alt="ohaio_bw">
+							<img class="carousel-cell__img-container-img img_color" src="img/carousel/ohaio_color.png" alt="ohaio_color">
+					</div>
+					<p class="carousel-cell__text">г. Колумбус</p>
+				</div>
+
+			</div>
+		</div>
+
 	</section>
 
 	<section class="s-faq">
@@ -494,9 +510,7 @@
 			</div>
 			<div class="row d-md-none">
 				<div class="col-12 text-center">
-					<div class="footer-copyright-container">
-							<p class="copyright"><a href="http://biblestudygroup.info" target="_blank" rel="nofollow noopener">© BSG Digital, 2018</a></p>
-					</div>
+					<p class="copyright"><a href="http://biblestudygroup.info" target="_blank" rel="nofollow noopener">© BSG Digital, 2018</a></p>
 				</div>
 			</div>
 		</div>

@@ -40,6 +40,7 @@ $(function() {
 		$(this).toggleClass("is-active");
 		burgerList.toggleClass("menu-active");
 		closeOverlay.toggleClass("menu-active");
+		$("body").toggleClass("no-scroll");
 	});
 
 
@@ -52,6 +53,7 @@ $(function() {
 		hamburger.removeClass("is-active");
 		burgerList.removeClass("menu-active");
 		closeOverlay.removeClass("menu-active");
+		$("body").removeClass("no-scroll");
 	}
 
 
